@@ -22,7 +22,7 @@ function gameStart(e) {
     topMargin();
     leftMargin();
     setTimeout(() => circle.style.display = 'none', 500);
-    circle.style.backgroundColor = "red";
+    circle.style.backgroundColor = "green";
     circle.start = new Date().getTime();
     gameArea.append(circle);
     game.append(gameArea);
@@ -60,3 +60,13 @@ function leftMargin(){
         
         return maxWidth;
 }
+
+function getColor(){
+    function col(){
+        let hex = random(255).toString(16);
+        //always return 2 values, even if a 0 is apended
+        return ('0' + String(hex)).substr(-2);
+    }
+    return '#' + col() + col() + col();
+}
+
