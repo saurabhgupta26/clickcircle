@@ -57,6 +57,10 @@ body {
     margin: 0 auto;
     max-width: 1200px;
 }
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
 .container_head h1 {
     font-size: 3rem;
     color: #2137b1;
