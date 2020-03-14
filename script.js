@@ -21,7 +21,7 @@ function gameStart(e) {
     circle.style.left = Math.round(Math.random()*window.innerWidth) + 'px';
     topMargin();
     leftMargin();
-    setTimeout(() => circle.style.display = 'none', 2000);
+    setTimeout(() => circle.style.display = 'none', 500);
     circle.style.backgroundColor = "red";
     circle.start = new Date().getTime();
     gameArea.append(circle);
@@ -34,9 +34,9 @@ function gameStart(e) {
     } );
 
    }
-    for (let i = 0 ; i<4; i++){
+    for (let i = 0 ; i<11; i++){
      
-        setTimeout(createCircle, i*5000);
+        setTimeout(createCircle, i*4000);
     }
 }
 function topMargin() {
